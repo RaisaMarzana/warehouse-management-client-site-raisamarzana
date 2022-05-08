@@ -1,0 +1,8 @@
+.app-section {
+    background-image: url('https://i.ibb.co/vHjz602/app.jpg');
+    height: 80vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.7);
+    background-blend-mode: overlay;
+}
