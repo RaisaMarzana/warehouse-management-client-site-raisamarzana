@@ -19,7 +19,7 @@ const AddItem = () => {
             quantity: event.target.quantity.value,
             about: event.target.about.value,
         }
-        axios.post('http://localhost:5000/stock', newItem)
+        axios.post('https://blooming-beyond-59766.herokuapp.com/stock', newItem)
             .then(response => {
                 const { data } = response;
                 if (data.insertedId) {

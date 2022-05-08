@@ -9,7 +9,7 @@ const ManageInventories = ({ inventory }) => {
     const deleteItem = _id => {
         const check = window.confirm('Do you really want to delete ?')
         if (check) {
-            const url = `http://localhost:5000/stock/${_id}`
+            const url = `https://blooming-beyond-59766.herokuapp.com/stock/${_id}`
             fetch(url, {
                 method: 'DELETE'
             })

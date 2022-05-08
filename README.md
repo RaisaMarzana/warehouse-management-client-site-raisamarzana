@@ -1,12 +1,11 @@
 # BookStock
-### BookStock is a warehouse management website. In this website, stock of any item can be added and this will be added to you current stock number efficiently and effectively. You can also keep track of you delivered goods. When a item is delivered the amount of stocks available are decreased in click of a button. You can add new items to you inventories along with proper description and stock amount. An user can check items that he/she added. An user can also delete any item from the inventory which will also delete it from the database. Every changes in the client end is stored in the database.
+### BookStock is a website for warehouse management. Any item's stock may be uploaded to this website, and it will be added to your existing stock number. When an item is delivered, the number of stocks available is reduced with a single click. You may add new goods to your inventory with suitable descriptions and stock quantities. A user can review items that he or she has added. Any item in the inventory can be deleted, which will also remove it from the database.
+[Live Site]()
 
-[Live Site](https://your-inventory-7rahib.web.app/)
 
-https://your-inventory-7rahib.web.app/
 
-* User can create a account for accessing the inventory
-* A user who is verified using JWT can inventories added by him/her
-* A user can add new item to the inventory
-* A user can update quantity of items in the inventory.
-* Any modifications or adding of items in the client-side in stored in the MongoDB database.
+* Create an account for using the inventory
+* Verified person using JWT can add inventories 
+* New item  can be added by user to the bookStock
+* Update quantity of items can be done by user in the bookstock.
+* Data are stored in the MongoDB database.

@@ -29,7 +29,7 @@ const SocialLogin = () => {
     const handleSignIn = async e => {
         await signInWithGoogle()
         const accessToken = async user => {
-            const { data } = await axios.post('http://localhost:5000/login')
+            const { data } = await axios.post('https://blooming-beyond-59766.herokuapp.com/login')
             localStorage.setItem('accessToken', data.accessToken)
             navigate(from, { replace: true });
             console.log(user?.email)

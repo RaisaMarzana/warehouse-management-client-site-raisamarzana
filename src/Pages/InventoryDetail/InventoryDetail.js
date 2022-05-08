@@ -10,7 +10,7 @@ const InventoryDetail = () => {
     const [quantity, setQuantity] = useState(0)
 
     useEffect(() => {
-        const url = `http://localhost:5000/stock/${_id}`
+        const url = `https://blooming-beyond-59766.herokuapp.com/stock/${_id}`
         fetch(url)
             .then(res => res.json())
             .then(data => {
@@ -23,7 +23,7 @@ const InventoryDetail = () => {
     const handleDeliver = () => {
         const quantity = inventory.quantity
         const newQuantity = { quantity: quantity - 1 }
-        const url = `http://localhost:5000/stock/${_id}`
+        const url = `https://blooming-beyond-59766.herokuapp.com/stock/${_id}`
         axios.put(url, newQuantity)
         setReload(reload + 1)
     }
@@ -34,7 +34,7 @@ const InventoryDetail = () => {
         const quantity = inventory.quantity
         const newQuantityValue = event.target.quantity.value;
         const newQuantity = { quantity: parseInt(quantity) + parseInt(newQuantityValue) }
-        const url = `http://localhost:5000/stock/${_id}`
+        const url = `https://blooming-beyond-59766.herokuapp.com/stock/${_id}`
         axios.put(url, newQuantity)
         setReload(reload + 1)
         event.target.reset();

@@ -4,7 +4,7 @@ const useInventoryDetail = _id => {
     const [inventory, setInventory] = useState({})
 
     useEffect(() => {
-        const url = `http://localhost:5000/stock/${_id}`
+        const url = `https://blooming-beyond-59766.herokuapp.com/stock/${_id}`
         fetch(url)
             .then(res => res.json())
             .then(data => setInventory(data))
